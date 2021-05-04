@@ -45,7 +45,7 @@
             : base("name=DboPersonalPermissionEntities")
         {
 
-            //Database.SetInitializer<DboPersonalPermissionEntities>(new CreateDatabaseIfNotExists<DboPersonalPermissionEntities>());
+            Database.SetInitializer<DboPersonalPermissionEntities>(new CreateDatabaseIfNotExists<DboPersonalPermissionEntities>());
             Database.SetInitializer(new DboPersonalPermissionDBInitializer());
         }
 
